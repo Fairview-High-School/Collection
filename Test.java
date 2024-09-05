@@ -16,7 +16,10 @@ public class Test
         
         //Note: The CollectionUtils class only knows about the Collection interface.
         //It has no knowledge of any particular class that implements the Collection Interface
+
+        c.resetNext();
         System.out.println("The minimum value is: " + CollectionUtils.minimum(c));
+        c.resetNext();
         System.out.println("The maximum value is: " + CollectionUtils.maximum(c));
         
     }
